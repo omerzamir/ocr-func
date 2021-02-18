@@ -27,9 +27,9 @@ RUN apk --update --no-cache --repository \
 RUN wget -O ${TESSDATA_PREFIX}/osd.traineddata https://github.com/tesseract-ocr/tessdata/raw/3.04.00/osd.traineddata && \
     wget -O ${TESSDATA_PREFIX}/equ.traineddata https://github.com/tesseract-ocr/tessdata/raw/3.04.00/equ.traineddata && \
     wget -O ${TESSDATA_PREFIX}/eng.traineddata https://github.com/tesseract-ocr/tessdata/raw/4.00/eng.traineddata && \
-    wget -O ${TESSDATA_PREFIX}/eng.traineddata https://github.com/tesseract-ocr/tessdata/raw/4.00/heb.traineddata && \
-    wget -O ${TESSDATA_PREFIX}/eng.traineddata https://github.com/tesseract-ocr/tessdata/raw/4.00/ara.traineddata && \
-    wget -O ${TESSDATA_PREFIX}/eng.traineddata https://github.com/tesseract-ocr/tessdata/raw/4.00/fas.traineddata
+    wget -O ${TESSDATA_PREFIX}/heb.traineddata https://github.com/tesseract-ocr/tessdata/raw/4.00/heb.traineddata && \
+    wget -O ${TESSDATA_PREFIX}/ara.traineddata https://github.com/tesseract-ocr/tessdata/raw/4.00/ara.traineddata && \
+    wget -O ${TESSDATA_PREFIX}/fas.traineddata https://github.com/tesseract-ocr/tessdata/raw/4.00/fas.traineddata
 
 RUN apk add \
     leptonica-dev \
